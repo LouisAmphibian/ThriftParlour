@@ -59,3 +59,65 @@ nav{
     flex: 1;
     
 }
+
+.form-container{
+    width: 350px;
+    height: 300px;
+    position: relative;
+    margin: 2% auto;
+    background-color: #D3D3D3;
+    padding: 35px;
+    overflow: hidden;
+    border-radius: 25px; 
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.input-box input{
+    margin-bottom: 12px;
+    height: 35px;
+    background-color:rgb(46, 49, 46);
+    font-size: 16px;
+    border-radius: 7px;
+    border: 1px solid #ccc;
+    outline: none;
+    margin-left: 45px;
+    padding-left: 15px;
+    color: #f6f6f6;
+}
+
+::placeholder{
+    margin: 10px;
+    color: white;
+}
+
+.form-container form h1{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+input[type="checkbox"]{
+    margin-left: 20px;
+}
+
+.login-btn{
+    width: 200px;
+    height: 34px;
+    margin-left: 42px;
+    margin-top:15px;
+    margin-bottom:10px;
+    border-radius: 15px;
+    border:1px solid #ccc;
+    outline: none;
+    background-color: rgb(20, 66, 16);
+    color: white;
+    font-weight: bold;
+}
+.register-link p{
+    text-align: center;
+}
+
+
