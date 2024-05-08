@@ -1,0 +1,22 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+nav .top-nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 10px;
+    margin-right: 20px;
+    justify-content: space-between;
+   
+}
+
+nav .top-nav ul{
+    text-align: right;
+}
+
+nav .top-nav{
+    background-color: limegreen;
+}
