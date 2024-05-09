@@ -45,29 +45,29 @@
     <div class="wrapper">
         <div class = "register-form-container">
 
-            <form action="" method="">
+            <form action="" method="post">
                 <h1>Register</h1>
 
                 <div class="input-box">
-                    <input type="text" placeholder="Email"
+                    <input type="text" name="email" id="email" placeholder="Email"
                     required>
                 </div>
                 <div class="input-box">
-                    <input type="text" placeholder="Name" required>
+                    <input type="text" name="name" placeholder="Name" id="name" required>
                 </div>
 
                 <div class="input-box">
-                    <input type="text" placeholder="Surname" required>
+                    <input type="text" name="surname" placeholder="Surname" id="surname" required>
                 </div>
 
                 <div class="input-box">
-                    <input type="text" placeholder="Password" required>
+                    <input type="text" name="password" placeholder="Password" id="passsword" required>
                 </div>
 
                 <p class="small-words">Minimum of 8 characters</p>
                 <p class="small-words">Uppercase, lowercase letters, and one number</p>
 
-                <select title="Select an option">
+                <select id="option" title="Select an option">
                     <option value="" disabled selected class="placeholder">Shoping preference</option>
                     <option value="option1">Men</option>
                     <option value="option2">Women</option>
@@ -75,7 +75,7 @@
                 </select>
                 
                 <div class="input-box">
-                    <input type="text" placeholder="Date of Birth" onfocus="this.type='date'"  onblur="this.type='text'" required>
+                    <input type="text" id="dateOfBirth" placeholder="Date of Birth" onfocus="this.type='date'"  onblur="this.type='text'" required>
                 </div>
 
                 <div class="Sign-up-check">
