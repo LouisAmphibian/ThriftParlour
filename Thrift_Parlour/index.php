@@ -17,7 +17,7 @@
       <ul>
         <li><a>Help</a></li>
         <li><a>Order Status</a></li>
-        <li><a href="login.html">Sign up/Sign up</a></li>
+        <li><a href="login.php">Sign up/Sign up</a></li>
       </ul>
     </div>
 

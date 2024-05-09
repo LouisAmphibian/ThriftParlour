@@ -14,7 +14,7 @@
           <ul>
             <li><a>Help</a></li>
             <li><a>Order Status</a></li>
-            <li><a href="login.html">Sign up/Sign up</a></li>
+            <li><a href="login.php">Sign up/Sign up</a></li>
           </ul>
         </div>
     
@@ -66,7 +66,7 @@
                 
 
                 <div class="register-link">
-                    <p>Don't have an account?<a href="register.html">Register</a></p>
+                    <p>Don't have an account?<a href="register.php">Register</a></p>
                 </div>
             </form>
         </div>
