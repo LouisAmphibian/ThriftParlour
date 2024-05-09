@@ -9,6 +9,35 @@
     <title>Document</title>
 </head>
 <body>
+  <?php
+  
+  include("php/config.php");
+
+  //when the submit button is pressed
+  if(isset($_POST["submit"])){
+    $email = $_POST["email"];
+    $name = $_POST["name"];
+    $surname = $_POST["surname"];
+    $password = $_POST["password"];
+    $catergory = $_POST["option"];
+    $date_Of_Birth = $_POST["dateOfBirth"];
+  }
+
+  //verifying the unique email
+
+ $verify_query = mysqli_query($con, "SELECT CUSTOMER_EMAIL FROM tblcustomer WHERE CUSTOMER_EMAIL='$email'");
+
+ if(mysqli_num_rows($verify_query) != 0){
+  echo "<div class='message'>
+        <p>This email is used, Try another One Please </p>
+        </div> <br>";
+  echo "<a href='javascript:self.history.back()'><button class='btn'>Go Back </button>";
+ }
+ else{
+  mysqli_query($con, "INSERT INTO tblcustomer(CUSTOMER_ID,CUSTOMER_NAME,CUSTOMER_SURNAME,CUSTOMER_EMAIL,DATE_OF_BIRTH,	COUNTRY,	PHONE_NUMBER, PASSWORD)	");
+ }
+  ?>
+
     <nav>
         <div class="top-nav">
           <ul>
