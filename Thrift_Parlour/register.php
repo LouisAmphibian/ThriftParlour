@@ -34,9 +34,13 @@
   echo "<a href='javascript:self.history.back()'><button class='btn'>Go Back </button>";
  }
  else{
-  mysqli_query($con, "INSERT INTO tblcustomer(CUSTOMER_ID,CUSTOMER_NAME,CUSTOMER_SURNAME,CUSTOMER_EMAIL,DATE_OF_BIRTH,	COUNTRY,	PHONE_NUMBER, PASSWORD)	");
+  mysqli_query($con, "INSERT INTO tblcustomer(CUSTOMER_EMAIL,CUSTOMER_NAME,CUSTOMER_SURNAME,DATE_OF_BIRTH, PASSWORD, CATERGORY)	VALUES (' $email','$name','$surname',' $date_Of_Birth ','$password','$catergory)") or die("Error Occured");
+  echo "<div class='message'>
+        <p>Registration successfully!</p>
+        </div> <br>";
+  echo "<a href='login.php'><button class='btn'>Login Now </button>";
  }
-  ?>
+  ?>  
 
     <nav>
         <div class="top-nav">
