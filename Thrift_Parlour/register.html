@@ -37,7 +37,7 @@
               </div>
               
             </form>
-          
+          s
         </div>
        </nav>
     
@@ -64,8 +64,8 @@
                     <input type="text" placeholder="Password" required>
                 </div>
 
-                <p>Minimum of 8 characters</p>
-                <p>Uppercase, lowercase letters, and one number</p>
+                <p class="small-words">Minimum of 8 characters</p>
+                <p class="small-words">Uppercase, lowercase letters, and one number</p>
 
                 <select title="Select an option">
                     <option value="" disabled selected class="placeholder">Shoping preference</option>
@@ -73,19 +73,23 @@
                     <option value="option2">Women</option>
                     <option value="option1">Family</option>
                 </select>
-    
-                <div class="remember-forgot">
-                    <label><input type="checkbox"> Remember me</label>
-                    <a href="#">Forgot password</a>
+                
+                <div class="input-box">
+                    <input type="text" placeholder="Date of Birth" onfocus="this.type='date'"  onblur="this.type='text'" required>
                 </div>
 
-                    <input class="reg-btn" type="submit" name="submit" required value="Register">
-                
-                
-
-                <div class="register-link">
-                    <p>Don't have an account?<a href="#">Register</a></p>
+                <div class="Sign-up-check">
+                    <label><input type="checkbox"> Sign up for emails to get update from Thrift Parlour on products, offers and your Member benefits.</label>
                 </div>
+
+                <div class="Sign-up-check">
+                    <label><input type="checkbox"> I agree to Thrift's <a>Privacy Policy</a> and <a>Terms of Us</a></label>
+                </div>
+
+
+
+                    <input class="reg-btn" type="submit" name="submit" required value="Create Account">
+                
             </form>
         </div>
         
