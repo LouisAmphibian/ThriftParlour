@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -62,24 +63,8 @@
                 $date_Of_Birth = date('Y-m-d', strtotime($dateOfBirth));
 
                 // Check if email exists
-                $verify_query = mysqli_query($con, "SELECT CUSTOMER_EMAIL FROM tblcustomer WHERE CUSTOMER_EMAIL='$email'");
-
-                if(mysqli_num_rows($verify_query) != 0) {
-                    // Display message if email already in use
-                    echo "<div class='message'>
-                        <p>This email is already in use. Please try another one.</p>
-                        </div> <br>";
-                    echo "<a href='javascript:self.history.back()'><button class='btn'>Go Back </button>";
-                } else {
-                    // Insert new customer into database
-                    mysqli_query($con, "INSERT INTO tblcustomer (CUSTOMER_EMAIL, CUSTOMER_NAME, CUSTOMER_SURNAME, DATE_OF_BIRTH, PASSWORD, CATERGORY)
-                                        VALUES ('$email', '$name', '$surname', '$date_Of_Birth', '$password', '$category')") or die("Error Occurred");
-                    // Display registration success message
-                    echo "<div class='message'>
-                        <p>Registration successful!</p>
-                        </div> <br>";
-                    echo "<a href='login.php'><button class='btn'>Login Now </button>";
-                }
+                $verify_query = mysqli_query($con, "SELECT CUSTOMER_EMAIL FROM tblcustomer WHERE CUSTOMER_EMAIL='$email' AND Password='$password'") or die("Select Error");
+                
             } else {
             ?>
             <!-- Registration Form -->

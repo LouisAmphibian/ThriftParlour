@@ -1,3 +1,7 @@
+<?php
+  SESSION_START();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -44,6 +48,16 @@
 
     <div class="wrapper">
         <div class = "form-container">
+
+        <?php
+            include("config.php");
+            if(isset($POST['submit'])){
+              $email =mysqli_real_escape_string($con,$_POST['email']);
+              $password = mysqli_real_escape_string($con,$_POST['password']);
+
+              $result = mysqli_query($con, "SELECT * FROM tblcustomer WHERE CUSTOMER_EMAIL='$email' AND Password='$password'") or die("Select Error");
+            }
+        ?>
 
             <form action="" method="">
                 <h1>Login</h1>
