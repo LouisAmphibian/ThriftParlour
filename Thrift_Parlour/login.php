@@ -50,8 +50,14 @@
         <div class = "form-container">
 
         <?php
+
+            //Including the configuration file to establish the database connection
             include("config.php");
+
+            // Check if the form is submitted
             if(isset($POST['submit'])){
+
+              
               $email =mysqli_real_escape_string($con,$_POST['email']);
               $password = mysqli_real_escape_string($con,$_POST['password']);
 

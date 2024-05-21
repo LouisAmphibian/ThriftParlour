@@ -48,9 +48,13 @@
         <!-- PHP Script for Form Handling -->
         <div class="register-form-container">
             <?php
+
+            //Including the configuration file to establish the database connection
             include("config.php");
 
+            // Check if the form is submitted
             if(isset($_POST["submit"])) {
+                
                 // Retrieve form data
                 $email = $_POST["email"];
                 $name = $_POST["name"];
