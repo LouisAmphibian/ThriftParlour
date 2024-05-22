@@ -68,6 +68,22 @@
 
                 // Check if email exists
                 $verify_query = mysqli_query($con, "SELECT CUSTOMER_EMAIL FROM tblcustomer WHERE CUSTOMER_EMAIL='$email' AND Password='$password'") or die("Select Error");
+
+                //to insert data
+                $query = "INSERT INTO tblcustomer VALUES(NULL, '$email', ' $name', ' $surname', '$category', '$date_Of_Birth')";
+
+                //now execute the query
+                $execute_query = mysqli_query($con,  $query);
+
+                //check if data is inserted 
+                if($execute_query){
+                    //display message
+                        echo "The data is stored thank you";
+                    
+                }else{
+                    //if not stored
+                    echo "The data is not stored ";
+                }
                 
             } else {
             ?>
