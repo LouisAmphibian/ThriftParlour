@@ -39,12 +39,35 @@ nav{
 }
 
 .search{
+    --padding : 14px;
+
+    height : max-content;
     width: max-content;
     display: flex;
     align-items: center;
-    padding: 14px;
+    padding: var(--padding);
+    background-color:transparent;
+}
+
+.search-input{
     border-radius: 28px;
-    background-color: darkgreen;
+    border: none;
+    margin-left: var(--padding);
+    font-size: 16px;
+    padding-left: 14px;
+    padding-bottom: 6px;
+    padding-top: 6px;
+    padding-right:14px ;
+    width: 250px;
+    font-family: 'Lexend' sans-serif;
+    color: rgba(255, 255, 255, 0.70);
+    outline: none;
+    background: grey;
+
+}
+
+.search-input ::placeholder{
+    color: rgba(0, 0, 0, 0.25);
 }
 
 
