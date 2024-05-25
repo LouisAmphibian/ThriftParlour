@@ -44,21 +44,9 @@ nav{
     align-items: center;
     padding: 14px;
     border-radius: 28px;
-    background: #f6f6f6;
-    height: 20px;
+    background-color: darkgreen;
 }
 
-.search-input{
-    font-size: 12px;
-    font-family: 'Lexend', sans-serif;
-    color: #333333;
-    margin-left: 14px;
-    outline: none;
-    border: none;
-    background: transparent;
-    flex: 1;
-    
-}
 
 .form-container{
     width: 350px;

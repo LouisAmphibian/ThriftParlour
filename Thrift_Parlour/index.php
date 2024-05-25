@@ -8,6 +8,8 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link href="style.css" rel="stylesheet">
+
+    <!--TO Use icon-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <title>Home</title>
   </head>
@@ -31,15 +33,15 @@
       </ul>
 
       
-        <form>
+        
           <div class="search" >
-            <span class="material-symbols-outlined">
+            <span class="material-symbols-outlined"><!--The google search icon-->
               search
             </span>
             <input class="search-input" type="search" placeholder="Search...">
           </div>
           
-        </form>
+        
       
     </div>
    </nav>
