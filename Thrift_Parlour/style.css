@@ -21,12 +21,34 @@ nav .top-nav ul{
 nav .top-nav{
     background-color: limegreen;
 }
+
+
+.bottom-nav{
+    display: block;
+
+}
+
+
+
+.second-sub-bottom-nav{
+display: flex;
+margin-top: 20px;
+justify-content: flex-end;
+align-items: center;
+align-self: center;
+}
+
+.nav-links{
+    display: flex;
+    margin-right: 150px;
+    margin-bottom: 0;
+}
 nav .bottom-nav ul li{
     list-style: none;
     display: inline-block;
     margin: 0 10px;
     margin-right: 20px;
-    justify-content: space-between;
+    
 }
 
 nav .bottom-nav ul{
@@ -36,6 +58,7 @@ nav .bottom-nav ul{
 
 nav{
     background-color:  lightgray;
+    height: 150px;
 }
 
 .search{
@@ -44,9 +67,11 @@ nav{
     height : max-content;
     width: max-content;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
+    
     padding: var(--padding);
     background-color:transparent;
+    
 }
 
 .search-input{
@@ -62,7 +87,7 @@ nav{
     font-family: 'Lexend' sans-serif;
     color: rgba(255, 255, 255, 0.70);
     outline: none;
-    background: grey;
+    background: rgb(73, 73, 73);
 
 }
 
