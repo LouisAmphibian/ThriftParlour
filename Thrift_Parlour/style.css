@@ -256,7 +256,7 @@ main{
 
 
 .top-footer{
-    background-color:lightgray;
+    background-color:rgb(123, 122, 122);
     display: flex;
     justify-content: space-between;
     padding:50px;
@@ -282,6 +282,7 @@ flex-direction: column;
 
 a{
     text-decoration: none;
+    color: inherit;
 }
 
 .footer-column ul li a{
