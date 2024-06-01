@@ -240,9 +240,11 @@ select{
 }
 
 footer{
-    background-color:  lightgray;
+    background-color:  rgb(70, 68, 68);
     margin-top: auto; /*for the footer move to the bottom*/
-    
+    color: white;
+    align-content: center;
+    text-align: center;
 }
 
 main{
@@ -255,8 +257,35 @@ main{
 
 .top-footer{
     background-color:lightgray;
+    display: flex;
+    justify-content: space-between;
+    padding:50px;
 }
 
-.bottom-footer{
-    background-color: rgb(70, 68, 68);
+footer p {
+    margin: 20px;
 }
+
+.footer-column ul li {
+    list-style: none; 
+    
+}
+
+.footer-column{
+    background-color: aqua;
+    
+}
+
+.footer-column a{
+    align-items: center;
+    align-content: center;  
+}
+
+
+
+
+
+
+
+
+
