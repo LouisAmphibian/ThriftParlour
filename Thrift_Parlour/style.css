@@ -272,14 +272,25 @@ footer p {
 }
 
 .footer-column{
-    background-color: aqua;
-    
+   display: block;
+   
 }
 
-.footer-column a{
-    align-items: center;
-    align-content: center;  
+.footer-column ul{
+padding-left: 0;
+text-align: left;
+display: flex;
+flex-direction: column;
 }
+
+a{
+    text-decoration: none;
+}
+
+.footer-column ul li a{
+    color: white;
+}
+    
 
 
 
