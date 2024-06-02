@@ -323,9 +323,9 @@ section h3{
 .image-container-gender{
     width: 270px;
     height: 170px;
-    background-color: purple;
     overflow: hidden;
     border-color: black;
+    position: relative;
 }
 
 .image-container-catergory{
@@ -342,8 +342,11 @@ section h3{
 } 
 
 .image-content{
-    width: 370px;
+    top: 0; /* Align to the top of the container */
+    object-fit: cover;
+    width: 270px;
     height: 170px;
+    position: absolute;
     background: rgba(0, 0, 0, 0.6); 
     opacity: 0;
     transition: 0.6s;/*The transition when hovered*/
@@ -351,6 +354,31 @@ section h3{
     justify-content: center;
     align-items: center;
 }
+
+/*When the mouse hovers the image*/
+.image-container-gender:hover .image-content{
+    opacity: 1;
+    transition: opacity 0.6s; /* Added the property to transition */
+}
+
+.image-content p{
+    font-size: 19px;
+    color:#fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-content > *{
+    transform: translateY(25px);
+    transition: transform 0.6s;
+}
+
+/*Making the content hover as well*/
+.content:hover> *{
+    transform: translateY(0px); /*Hover in the y-axis and stop with 0px*/
+}
+
 
 .image-container-catergory img{
     object-fit: cover;
