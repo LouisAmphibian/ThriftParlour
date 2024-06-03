@@ -9,10 +9,10 @@ $dataFile ="userData.txt";
 
 // Check if table exists and drop it if it does
 $sql = "DROP TABLE IF EXISTS $tableName";
-if ($conn->query($sql) === TRUE) {
+if ($connection->query($sql) === TRUE) {
     echo "Table $tableName dropped successfully if it existed.\n";
 } else {
-    die("Error dropping table: " . $conn->error);
+    die("Error dropping table: " . $connection->error);
 }
 
 // Create table
@@ -28,10 +28,10 @@ $sql = "CREATE TABLE $tableName (
     CATEGORY VARCHAR(20) NOT NULL
 )";
 
-if ($conn->query($sql) === TRUE) {
+if ($connection->query($sql) === TRUE) {
     echo "Table $tableName created successfully.\n";
 } else {
-    die("Error creating table: " . $conn->error);
+    die("Error creating table: " . $connection->error);
 }
 
 // Read data from userData.txt file
@@ -58,7 +58,7 @@ if (!empty($current_user)) {
 }
 
 // Insert data into the table
-$stmt = $conn->prepare("INSERT INTO $tableName (CUSTOMER_NAME, CUSTOMER_SURNAME, CUSTOMER_EMAIL, DATE_OF_BIRTH, COUNTRY, PHONE_NUMBER, PASSWORD, CATEGORY) VALUES (?, ?, ?, ?, ?, ?, ?, ?)");
+$stmt = $connection->prepare("INSERT INTO $tableName (CUSTOMER_NAME, CUSTOMER_SURNAME, CUSTOMER_EMAIL, DATE_OF_BIRTH, COUNTRY, PHONE_NUMBER, PASSWORD, CATEGORY) VALUES (?, ?, ?, ?, ?, ?, ?, ?)");
 $stmt->bind_param("ssssssss", $name, $surname, $email, $dob, $country, $phone, $password, $category);
 
 foreach ($users as $user) {
@@ -74,7 +74,7 @@ foreach ($users as $user) {
 }
 
 $stmt->close();
-$conn->close();
+$connection->close();
 
 echo "Data loaded into table $tableName successfully.";
 ?>
