@@ -38,7 +38,7 @@
       <div class="second-sub-bottom-nav">
         <ul class="nav-links">
           <li><a>New Arrival</a></li>
-          <li><a href="shop.html">Shop</a></li>
+          <li><a href="shop.php">Shop</a></li>
           <li><a href="#">Sale</a></li>
           <li><a href="#">Sell</a></li>
           <li><a href="#">About Us</a></li>
@@ -60,7 +60,7 @@
       <div class="footer-column">
         <h4>Shop</h4>
         <ul>
-          <li><a href="#">Men</a></li>
+          <li><a href="Men_Section.php">Men</a></li>
           <li><a href="#">Women</a></li>
           <li><a href="#">Kids</a></li>
           <li><a href="#">Uni-sex</a></li>

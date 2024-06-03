@@ -38,7 +38,7 @@
       <div class="second-sub-bottom-nav">
         <ul class="nav-links">
           <li><a>New Arrival</a></li>
-          <li><a href="shop.html">Shop</a></li>
+          <li><a href="shop.php">Shop</a></li>
           <li><a>Sale</a></li>
           <li><a>Sell</a></li>
           <li><a>About Us</a></li>
@@ -57,7 +57,7 @@
         <h3>Gender</h3>
         <div class = "gender-section">
 
-            <a href="Men_Section.html">
+            <a href="men_section.php">
             <div class="image-container-gender">
                 
                 <img  src="Images/GenderSection/Men.jpg" alt="Men's Section"/>
@@ -67,7 +67,7 @@
             </div>
             </a>
 
-            <a href="Women_Section.html">
+            <a href="Women_Section.php">
             <div class="image-container-gender">
                 <img src ="Images/GenderSection/Women.png" alt = "Women's Section"/>
                 <div class="image-content-gender">
@@ -76,7 +76,7 @@
             </div>
             </a>
 
-            <a href="Kids_Section.html">
+            <a href="Kids_Section.php">
             <div class="image-container-gender">
                 <img src ="Images/GenderSection/Kids.jpg" alt = "Kid's Section"/>
                 <div class="image-content-gender">
@@ -85,7 +85,7 @@
             </div>
             </a>
             
-            <a href="Unisex_Section.html">
+            <a href="Unisex_Section.php">
             <div class="image-container-gender">
                 <img src = "Images/GenderSection/Unisex.jpg" alt = "Uni-sex Section"/>
                 <div class="image-content-gender">
