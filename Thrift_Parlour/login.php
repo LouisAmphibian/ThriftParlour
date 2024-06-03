@@ -13,37 +13,42 @@
     <title>Document</title>
 </head>
 <body>
-    <nav>
-        <div class="top-nav">
-          <ul>
-            <li><a>Help</a></li>
-            <li><a>Order Status</a></li>
-            <li><a href="login.php">Sign up/Sign up</a></li>
-          </ul>
+<nav>
+    <div class="top-nav">
+      <ul>
+        <li><a>Help</a></li>
+        <li><a>Order Status</a></li>
+        <li><a href="login.php">Sign up/Sign up</a></li>
+      </ul>
+    </div>
+   
+    <div class="bottom-nav">
+      <div class="first-sub-bottom-nav">
+        <div class="web-icon">
+          <img src="" alt="Thrift Parlour Icon"/>
         </div>
-    
-        <div class="bottom-nav">
-          <ul>
-            <li><a>New Arrival</a></li>
-            <li><a>Shop</a></li>
-            <li><a>Sale</a></li>
-            <li><a>Sell</a></li>
-            <li><a>About Us</a></li>
-          </ul>
-    
-          
-            <form>
-              <div class="search" >
-                <span class="material-symbols-outlined">
-                  search
-                </span>
-                <input class="search-input" type="search" placeholder="Search...">
-              </div>
-              
-            </form>
-          
+
+        <div class="icons">
+          <span id="favorite" class="material-symbols-outlined">favorite</span>
+          <span id="shopping_cart" class="material-symbols-outlined">shopping_cart</span>
         </div>
-       </nav>
+      </div>
+
+      <div class="second-sub-bottom-nav">
+        <ul class="nav-links">
+          <li><a>New Arrival</a></li>
+          <li><a href="shop.php">Shop</a></li>
+          <li><a href="#">Sale</a></li>
+          <li><a href="#">Sell</a></li>
+          <li><a href="#">About Us</a></li>
+        </ul>
+        <div class="search">
+          <span class="material-symbols-outlined">search</span>
+          <input class="search-input" type="search" placeholder="Search for products">
+        </div>
+      </div>
+    </div>
+   </nav>
     
 
     <div class="wrapper">
@@ -52,7 +57,7 @@
         <?php
 
             //Including the configuration file to establish the database connection
-            include("config.php");
+            include("DBConn.php");
 
             // Check if the form is submitted
             if(isset($POST['submit'])){
@@ -92,5 +97,61 @@
         </div>
         
     </div>
+
+    <footer>
+    <div class="top-footer">
+      <div class="footer-column">
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="Men_Section.php">Men</a></li>
+          <li><a href="#">Women</a></li>
+          <li><a href="#">Kids</a></li>
+          <li><a href="#">Uni-sex</a></li>
+          <li><a href="#">Sale</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>Help</h4>
+        <ul>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Order</a></li>
+          <li><a href="#">Accessibility</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>Seller's corner</h4>
+        <ul>
+          <li><a href="#">Ticket Order</a></li>
+          <li><a href="#">Sign up to sell</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Terms of Use</a></li>
+          <li><a href="#">Careers</a></li>
+        </ul>
+      </div>
+      
+
+      <div class="footer-column">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="#">Call sthe shop</a></li>
+          <li><a href="#">Email Us</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    
+<p>&copy; 2024 Thrift Parlour. All rights reserved</p>
+    
+   </footer>
 </body>
 </html>
