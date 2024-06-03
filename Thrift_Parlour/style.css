@@ -281,7 +281,7 @@ footer p {
 
 .footer-column ul li {
     list-style: none; 
-    
+    margin-bottom: 8px;
 }
 
 
@@ -299,12 +299,23 @@ a{
 }
 
 .footer-column ul li a{
-    color: white;
+    display: block;
+    color: rgb(163, 204, 217);
+    font-size: 13px;
+    font-weight: 600;
+    transition: all .35s ease;
+}
+
+.footer-column ul li a:hover{
+    transform: translateX(-8px);
+    color: black;
 }
 
 .footer-column h4{
     text-align: left;
     font-size: 21px;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
 }
 
 /*shop page*/
@@ -671,4 +682,9 @@ section h3{
 .sale h4{
     margin: auto;
     font-size: 18px;
+}
+
+.box:hover{
+    transform: scale(0.9)translateY(-5px);
+    cursor: pointer;
 }
