@@ -75,25 +75,23 @@
 
                 // Check if email exists
                 $verify_query = mysqli_query($connection, "SELECT CUSTOMER_EMAIL FROM tblcustomer WHERE CUSTOMER_EMAIL='$email' AND Password='$password'") or die("Select Error");
-
-                //to insert data
-                $query = "INSERT INTO tblcustomer VALUES(NULL, '$email', ' $name', ' $surname', '$category', '$date_Of_Birth')";
-
-                //now execute the query
-                $execute_query = mysqli_query($connection,  $query);
-
-                //check if data is inserted 
-                if($execute_query){
-                    //display message
-                        echo "The data is stored thank you";
-                    
-                }else{
-                    //if not stored
-                    echo "The data is not stored ";
-                }
                 
-            } else {
-            ?>
+                if(mysqli_num_rows($verify_query) > 0) {
+                  echo "Email already exists.";
+              } else {
+                  // Insert data
+                  $query = "INSERT INTO tblcustomer (CUSTOMER_EMAIL, CUSTOMER_NAME, CUSTOMER_SURNAME, PASSWORD, CATEGORY, DATE_OF_BIRTH, COUNTRY, PHONE_NUMBER) VALUES ('$email', '$name', '$surname', '$password', '$category', '$date_Of_Birth')";
+                  $execute_query = mysqli_query($connection, $query);
+
+                  // Check if data is inserted
+                  if($execute_query) {
+                      echo "The data is stored. Thank you.";
+                  } else {
+                      echo "The data is not stored.";
+                  }
+              }
+          } else {
+          ?>
             <!-- Registration Form -->
             <form action="" method="post">
                 <h1>Register</h1>
