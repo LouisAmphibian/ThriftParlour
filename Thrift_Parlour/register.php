@@ -74,13 +74,13 @@
                 $date_Of_Birth = date('Y-m-d', strtotime($dateOfBirth));
 
                 // Check if email exists
-                $verify_query = mysqli_query($con, "SELECT CUSTOMER_EMAIL FROM tblcustomer WHERE CUSTOMER_EMAIL='$email' AND Password='$password'") or die("Select Error");
+                $verify_query = mysqli_query($connection, "SELECT CUSTOMER_EMAIL FROM tblcustomer WHERE CUSTOMER_EMAIL='$email' AND Password='$password'") or die("Select Error");
 
                 //to insert data
                 $query = "INSERT INTO tblcustomer VALUES(NULL, '$email', ' $name', ' $surname', '$category', '$date_Of_Birth')";
 
                 //now execute the query
-                $execute_query = mysqli_query($con,  $query);
+                $execute_query = mysqli_query($connection,  $query);
 
                 //check if data is inserted 
                 if($execute_query){
